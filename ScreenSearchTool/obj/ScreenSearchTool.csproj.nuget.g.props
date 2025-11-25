@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\TON\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\TON\.nuget\packages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)sdcb.paddle2onnx.runtime.win64\1.0.0-rc.2\build\netcoreapp\Sdcb.Paddle2Onnx.runtime.win64.props" Condition="Exists('$(NuGetPackageRoot)sdcb.paddle2onnx.runtime.win64\1.0.0-rc.2\build\netcoreapp\Sdcb.Paddle2Onnx.runtime.win64.props')" />
+    <Import Project="$(NuGetPackageRoot)sdcb.onnx.runtime.win64\1.11.22.423\build\netcoreapp\Sdcb.Onnx.runtime.win64.props" Condition="Exists('$(NuGetPackageRoot)sdcb.onnx.runtime.win64\1.11.22.423\build\netcoreapp\Sdcb.Onnx.runtime.win64.props')" />
+    <Import Project="$(NuGetPackageRoot)sdcb.mkldnn.runtime.win64\0.19.0\build\netcoreapp\Sdcb.Mkldnn.runtime.win64.props" Condition="Exists('$(NuGetPackageRoot)sdcb.mkldnn.runtime.win64\0.19.0\build\netcoreapp\Sdcb.Mkldnn.runtime.win64.props')" />
+    <Import Project="$(NuGetPackageRoot)sdcb.paddleinference.runtime.win64.cu120-sm80\2.6.1\build\netcoreapp\Sdcb.PaddleInference.runtime.win64.cu120-sm80.props" Condition="Exists('$(NuGetPackageRoot)sdcb.paddleinference.runtime.win64.cu120-sm80\2.6.1\build\netcoreapp\Sdcb.PaddleInference.runtime.win64.cu120-sm80.props')" />
+    <Import Project="$(NuGetPackageRoot)opencvsharp4.runtime.win\4.11.0.20250507\build\net5.0\OpenCvSharp4.runtime.win.props" Condition="Exists('$(NuGetPackageRoot)opencvsharp4.runtime.win\4.11.0.20250507\build\net5.0\OpenCvSharp4.runtime.win.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\TON\.nuget\packages\microsoft.web.webview2\1.0.3595.46</PkgMicrosoft_Web_WebView2>
+  </PropertyGroup>
+</Project>

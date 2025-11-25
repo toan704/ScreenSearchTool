@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PlatformTarget>x64</PlatformTarget>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<ApplicationIcon>icon.ico</ApplicationIcon>
+		<PublishSingleFile>false</PublishSingleFile>
+		<SelfContained>false</SelfContained>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="icon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3595.46" />
+		<PackageReference Include="MouseKeyHook" Version="5.7.1" />
+		<PackageReference Include="OpenCvSharp4.runtime.win" Version="4.11.0.20250507" />
+		<PackageReference Include="Paddle.Runtime.win_x64" Version="3.2.2" />
+		<PackageReference Include="Sdcb.PaddleInference.runtime.win64.cu120-sm80" Version="2.6.1" />
+		<PackageReference Include="Sdcb.PaddleInference.runtime.win64.mkl" Version="3.1.0.54" />
+		<PackageReference Include="Sdcb.PaddleOCR" Version="3.0.1" />
+		<PackageReference Include="Sdcb.PaddleOCR.Models.Local" Version="3.0.1" />
+		<PackageReference Include="Sdcb.PaddleOCR.Models.LocalV4" Version="2.7.0.1" />
+		<PackageReference Include="Sdcb.PaddleOCR.Models.LocalV5" Version="3.0.0" />
+		<PackageReference Include="Tesseract" Version="5.2.0" />
+		<PackageReference Include="Tesseract.Drawing" Version="5.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

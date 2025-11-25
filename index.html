@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Thống kê người dùng</title>
+<style>
+    html, body {
+        margin:0; padding:0; height:100%; width:100%;
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: linear-gradient(135deg,
+            #ffffff 0%,
+            #f0f8ff 20%,
+            #d0f0ff 70%,
+            #e0f8ff 100%
+        );
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        overflow:hidden;
+    }
+
+    .brand {
+        display:flex;
+        align-items:center;
+        gap:0.5em;
+        margin-bottom: 0.4em;
+    }
+    .brand img {
+        width:clamp(48px,5vw,64px);
+        height:auto;
+    }
+    .brand span {
+        font-weight:700;
+        font-size:clamp(1.4em,4vw,2em);
+        color:#1e90ff;
+    }
+    h1 {
+        font-size: clamp(1.6em, 5vw, 3em);
+        margin: 0.2em 0;
+        background: linear-gradient(90deg, #377194, #154365, #377194);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+    }
+
+    /* Card kính mờ */
+    .glass-card {
+        width: 96vw;
+        height: 96vh;
+        max-width: 1400px;
+        max-height: 960px;
+        background: rgba(255,255,255,0.28);
+        border: 1px solid rgba(255,255,255,0.35);
+        border-radius: 28px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .glass-card::before {
+        content:''; position:absolute; inset:0; border-radius:28px;
+        background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.05));
+        pointer-events:none;
+    }
+    .glass-card::after {
+        content:''; position:absolute; inset:-3px; border-radius:30px;
+        background: linear-gradient(45deg, transparent 0%, rgba(30,144,255,0.25) 30%, rgba(30,144,255,0.15) 50%, rgba(30,144,255,0.25) 70%, transparent 100%);
+        animation: borderFlow 4s linear infinite;
+        opacity: 0.6; pointer-events:none;
+    }
+    @keyframes borderFlow {
+        0% { transform: translateX(-100%) translateY(-100%); }
+        100% { transform: translateX(100%) translateY(100%); }
+    }
+
+    /* Header cố định */
+    .header {
+        padding: 30px 40px 20px;
+        text-align: center;
+        flex-shrink: 0;
+        z-index: 2;
+    }
+
+    /* Iframe wrapper để căn giữa */
+    .iframe-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: rgba(255,255,255,0.08);
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Responsive */
+    @media (max-width: 767px) {
+        .glass-card { border-radius: 24px; width: 94vw; height: 94vh; }
+        .header { padding: 24px 20px 16px; }
+        h1 { font-size: clamp(1.4em, 5vw, 2.2em); }
+        iframe { border-radius: 16px; }
+    }
+
+    @media (min-width: 768px) {
+        body { padding: 0; }
+        .glass-card {
+            width: 100vw !important;
+            height: 100vh !important;
+            border-radius: 0 !important;
+            border: none;
+        }
+        .iframe-wrapper { padding: 20px; }
+        iframe { border-radius: 24px; }
+    }
+</style>
+</head>
+<body>
+
+<div class="glass-card">
+    <div class="header">
+        <div class="brand">
+            <img src="https://i.ibb.co/fGH1jfxB/android-icon-96x96.png" alt="Logo">
+            <span></span>
+        </div>
+        <h1>Thống kê người dùng</h1>
+    </div>
+
+    <!-- Căn giữa bảng tuyệt đối -->
+    <div class="iframe-wrapper">
+        <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkpGZfwRKYvNG4a5gqJEoZjZee2Pk2hsOYVDW35BAjFU3NVrapkuJGhmvNw9qriHdgpHWGDCHyXKyX/pubhtml?widget=true&headers=false"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+</body>
+</html>

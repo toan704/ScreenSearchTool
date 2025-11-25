@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>ScreenSearch</title>
+<link rel="icon" href="icon.ico" type="image/x-icon">
+<style>
+html, body {
+    margin:0; padding:0; height:100%;
+    font-family: 'Segoe UI', sans-serif;
+   html, body {
+    background: linear-gradient(
+        135deg,
+		 #ffffff 0%,
+         #f0f8ff 20%, 
+        #d0f0ff 80%, 
+        
+       #e0f7ff 100%
+    );
+}
+
+    display:flex; align-items:center; justify-content:center;
+}
+
+.brand {
+    display:flex; align-items:center; gap:0.5em;
+}
+
+.brand img {
+    width:clamp(64px,5vw,48px);
+    height:auto;
+}
+
+.brand span {
+    font-weight:700;
+    font-size:clamp(1.2em,4vw,1.6em);
+    color:#1e90ff;
+}
+
+h1 {
+    font-size: clamp(1.2em, 5vw, 2.5em);
+    margin: 0.2em 0;
+    /* Gradient chữ xanh biển mượt hơn */
+  background: linear-gradient(90deg, #377194, #154365, #377194);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+p {
+    font-size: clamp(0.9em, 2.5vw, 1.2em);
+    margin: 0 0 1em 0;
+    min-height: 1.2em;
+    transition: all 0.5s ease;
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 25%, #374151 50%, #4b5563 75%, #6b7280 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+}
+
+/* Liquid glass button */
+.status {
+    position: relative;
+    padding: 0.6em 1.5em;
+    border-radius: 20px;
+    font-size: clamp(0.9em,2vw,1.1em);
+    font-weight:600;
+    color:#1e90ff;
+    background: rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+	margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.status::before {
+    content:'';
+    position:absolute; inset:0;
+    border-radius:20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+    pointer-events:none;
+}
+
+.status::after {
+    content:'';
+    position:absolute; inset:-2px;
+    border-radius:22px;
+    background: linear-gradient(45deg, transparent 0%, rgba(30,144,255,0.2) 25%, rgba(30,144,255,0.1) 50%, rgba(30,144,255,0.2) 75%, transparent 100%);
+    animation: borderFlow 3s linear infinite;
+    opacity: 0.5;
+    pointer-events:none;
+}
+
+@keyframes borderFlow {
+    0% { transform: translateX(-100%) translateY(-100%); }
+    100% { transform: translateX(100%) translateY(100%); }
+}
+
+.greeting {
+    font-size:clamp(0.9em,2.5vw,1.2em);
+    font-style:italic;
+    opacity:0.7;
+    min-height:1.2em;
+    transition: all 0.5s ease;
+    margin-top: 1em;
+	text-align: right;
+}
+
+
+</style>
+</head>
+<body>
+<div >
+    <div class="brand">
+        <img src="icon.ico" alt="Logo">
+		   <h1>ScreenSearch</h1>
+        <span></span>
+    </div>
+    <p>Tìm kiếm, dịch thuật văn bản trực tiếp trên màn hình của bạn</p>
+    <div class="status">Bắt đầu trải nghiệm ngay</div>
+    <div class="greeting" id="greeting"></div>
+</div>
+
+<script>
+const greetings = [
+  // Nhật Bản
+  "こんにちは！", "おはよう！", "こんばんは！", "お元気ですか？", "今日も良い一日を！", "素敵な一日になりますように！", "また会えて嬉しいです！", "いつもありがとうございます！",
+
+  // Trung Quốc (giản thể)
+  "你好！", "早上好！", "晚上好！", "好久不见！", "今天心情不错！", "祝你一切顺利！", "愿你每天开心快乐！", "很高兴再次见到你！",
+
+  // Hàn Quốc
+  "안녕하세요!", "안녕!", "오늘도 화이팅!", "잘 지내요?", "좋은 하루 되세요!", "만나서 정말 반갑습니다!", "항상 행복하시길 바랍니다!", "오늘도 멋진 하루 보내세요!",
+
+  // Ấn Độ (Hindi + các ngôn ngữ lớn)
+  "नमस्ते!", "नमस्कार!", "कैसे हो?", "शुभ प्रभात!", "आपका दिन शुभ हो!", "बहुत अच्छा लगा मिलकर!", "हर पल खुश रहें!", "आपके लिए ढेर सारी शुभकामनाएं!",
+
+  // Nga
+  "Привет!", "Здравствуйте!", "Доброе утро!", "Как дела?", "Очень рад тебя видеть!", "Желаю прекрасного дня!", "Пусть всё будет хорошо!", "Счастья тебе и здоровья!",
+
+  // Tiếng Việt (vẫn giữ chút để gần gũi)
+  "Xin chào!", "Chào bạn!", "Chào buổi sáng!", "Rất vui gặp bạn!", "Chúc ngày mới vui vẻ!", "Luôn hạnh phúc nhé!",
+
+  // Các ngôn ngữ lớn khác (Anh, Tây Ban Nha, Pháp, Đức, Ả Rập, Bồ, Indonesia…)
+  "Hello!", "Good morning!", "Have a great day!", "Stay awesome!", "You are amazing!", "Keep smiling always!",
+  "¡Hola!", "¡Buenos días!", "¡Que tengas un lindo día!",
+  "Bonjour!", "Bonne journée!", "Prends soin de toi!",
+  "Guten Morgen!", "Schönen Tag noch!",
+  "صباح الخير!", "مساء الخير!", "كيف حالك؟",
+  "Bom dia!", "Tudo bem?", "Tenha um ótimo dia!",
+  "Selamat pagi!", "Apa kabar?", "Semoga hari ini indah!",
+  "Ciao!", "Buongiorno!", "Namaste!", "Salaam!", "Shalom!", "Sawasdee!",
+
+  // Châm ngôn ngắn tích cực đa ngôn
+  "Live fully today!", "Dream without fear!", "Love without limits!", "Be the light!", "Everything is possible!",
+  "You are enough!", "Today is yours!", "Make it happen!", "Stay strong!", "Keep shining bright!",
+  "Hakuna matata!", "Pura vida!", "Carpe diem!", "Stay positive!", "World is beautiful!"
+];
+
+function randomGreeting() {
+    const g = greetings[Math.floor(Math.random()*greetings.length)];
+    const el = document.getElementById("greeting");
+    el.style.opacity = 0;
+    setTimeout(()=>{ el.textContent = g; el.style.opacity = 1; }, 200);
+}
+
+randomGreeting();
+setInterval(randomGreeting,2000);
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|c:\\users\\ton\\source\\repos\\screensearchtoolpaddleocr\\screensearchtool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|c:\\users\\ton\\source\\repos\\screensearchtoolpaddleocr\\screensearchtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\screensearchtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|c:\\users\\ton\\source\\repos\\screensearchtoolpaddleocr\\screensearchtool\\detectionoverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\detectionoverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|c:\\users\\ton\\source\\repos\\screensearchtoolpaddleocr\\screensearchtool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|c:\\users\\ton\\source\\repos\\screensearchtoolpaddleocr\\screensearchtool\\screensearchtool.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\screensearchtool.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|c:\\users\\ton\\source\\repos\\screensearchtoolpaddleocr\\screensearchtool\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\screensearchtool\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|c:\\users\\ton\\source\\repos\\screensearchtoolpaddleocr\\screensearchtool\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EA7863-AFFE-484E-A4CE-7EAD188106A2}|ScreenSearchTool\\ScreenSearchTool.csproj|solutionrelative:screensearchtool\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ScreenSearchTool",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\ScreenSearchTool.csproj",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\ScreenSearchTool.csproj",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\ScreenSearchTool.csproj",
+              "RelativeToolTip": "ScreenSearchTool\\ScreenSearchTool.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-25T15:34:31.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form2.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\Form2.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form2.cs [Design]",
+              "RelativeToolTip": "ScreenSearchTool\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:40:34.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Program.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\Program.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Program.cs",
+              "RelativeToolTip": "ScreenSearchTool\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:40:11.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetectionOverlay.cs",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\DetectionOverlay.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\DetectionOverlay.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\DetectionOverlay.cs",
+              "RelativeToolTip": "ScreenSearchTool\\DetectionOverlay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T09:38:29.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form1.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\Form1.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form1.cs [Design]",
+              "RelativeToolTip": "ScreenSearchTool\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T09:34:45.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form1.Designer.cs",
+              "RelativeToolTip": "ScreenSearchTool\\Form1.Designer.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAlwK8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T10:57:29.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form1.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\Form1.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form1.cs",
+              "RelativeToolTip": "ScreenSearchTool\\Form1.cs",
+              "ViewState": "AgIAAPUBAAAAAAAAAAAAwP4BAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:35:30.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form2.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\Form2.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form2.cs",
+              "RelativeToolTip": "ScreenSearchTool\\Form2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:45:48.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "ScreenSearchTool\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\TON\\source\\repos\\ScreenSearchToolPaddleOCR\\ScreenSearchTool\\Form2.Designer.cs",
+              "RelativeToolTip": "ScreenSearchTool\\Form2.Designer.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAcwG4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:47:29.068Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
