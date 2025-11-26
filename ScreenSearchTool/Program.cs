@@ -1,13 +1,24 @@
-﻿//namespace ScreenSearchTool
+﻿//using System.Threading;
+
+//namespace ScreenSearchTool
 //{
 //    internal static class Program
 //    {
 //        /// <summary>
 //        /// The main entry point for the application.
 //        /// </summary>
+//        private static Mutex mutex;
 //        [STAThread]
 //        static void Main()
 //        {
+//            bool createdNew;
+//            mutex = new Mutex(true, "ScreenSearchTool_SingleInstance_Mutex", out createdNew);
+
+//            if (!createdNew)
+//            {
+//                return;
+//            }
+
 //            ApplicationConfiguration.Initialize();
 
 //            string targetFile = Path.Combine(Application.StartupPath, "paddle_inference_c.dll");
@@ -39,12 +50,12 @@
 //            string time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
 //            var values = new Dictionary<string, string>
-//    {
-//        { "entry.1363621487", userName },      // Tên người dùng
-//        { "entry.1913843925", time },          // Thời gian
-//        { "entry.438025676", machineName },    // Tên máy
-//        { "entry.1366624685", message }        // Thông điệp
-//    };
+//            {
+//                { "entry.1363621487", userName },      // Tên người dùng
+//                { "entry.1913843925", time },          // Thời gian
+//                { "entry.438025676", machineName },    // Tên máy
+//                { "entry.1366624685", message }        // Thông điệp
+//            };
 
 //            var content = new FormUrlEncodedContent(values);
 //            var response = client.PostAsync(
@@ -55,6 +66,9 @@
 //    }
 
 //}
+
+
+
 namespace ScreenSearchTool
 {
     internal static class Program

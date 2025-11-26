@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScreenSearchTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfa125be107403b37c526559f18cc5df51b68e9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a35d5c2309c236c1c0238a4eb413a3dd60d3af21")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScreenSearchTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScreenSearchTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

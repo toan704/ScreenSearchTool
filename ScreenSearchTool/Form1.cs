@@ -448,7 +448,7 @@ namespace ScreenSearchTool
             table.Controls.Add(chkCopy, 0, 5); table.SetColumnSpan(chkCopy, 2);
             var chkLayout = new CheckBox { Text = "Hiển thị theo bố cục trích xuất", Checked = settings.ShowLayout, AutoSize = true, Anchor = AnchorStyles.Left };
             table.Controls.Add(chkLayout, 0, 6); table.SetColumnSpan(chkLayout, 2);
-            var chkTray = new CheckBox { Text = "Ẩn vào khay hệ thống khi đóng Shift+D", Checked = settings.MinimizeToTray, AutoSize = true, Anchor = AnchorStyles.Left };
+            var chkTray = new CheckBox { Text = "Ẩn/ hiện vào khay hệ thống khi đóng Shift+D", Checked = settings.MinimizeToTray, AutoSize = true, Anchor = AnchorStyles.Left };
             table.Controls.Add(chkTray, 0, 7); table.SetColumnSpan(chkTray, 2);
             var btnClose = new Button { Text = "Đóng", DialogResult = DialogResult.OK, Anchor = AnchorStyles.Right, Size = new Size(80, 30) };
             table.Controls.Add(btnClose, 1, 8);
@@ -1067,13 +1067,13 @@ namespace ScreenSearchTool
 
     class Settings
     {
-        public bool AutoCopy { get; set; } = true;
+        public bool AutoCopy { get; set; } = false;
         public string ApiKey { get; set; } = "";
-        public string Mode { get; set; } = "Tìm kiếm";
-        public string TranslateTo { get; set; } = "en";
+        public string Mode { get; set; } = "Dịch";
+        public string TranslateTo { get; set; } = "vi";
         public string OcrLanguage { get; set; } = "en";
         public bool ShowLayout { get; set; } = false;
-        public bool MinimizeToTray { get; set; } = true;
+        public bool MinimizeToTray { get; set; } = false;
         public int FormWidth { get; set; } = 640;
         public int FormHeight { get; set; } = 378;
         public List<string> OcrHistory { get; set; } = new List<string>();
