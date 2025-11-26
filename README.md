@@ -16,6 +16,6 @@ ScreenSearchTool là ứng dụng tiện ích trên Windows, cho phép bạn ch�
 
 - Tải bản build release từ GitHub: [Download ScreenSearchTool Release](https://github.com/toan704/ScreenSearchTool/releases)
 
-# Thống kê người dùng
+## Thống kê người dùng
 
 - Xem bảng trực tiếp và luôn cập nhật tại: [ScreenSearchTool User](https://toan704.github.io/ScreenSearchTool/)
